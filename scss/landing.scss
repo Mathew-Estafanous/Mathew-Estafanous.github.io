@@ -1,3 +1,5 @@
+@import "colours";
+
 .landing {
     display: flex;
 }
@@ -6,7 +8,7 @@
 /*Welcome Message*/
 .welcomeMsg {
     margin-top: 15rem;
-    width: 65%;
+    flex: 2;
 
     & h1 {
         margin: 0;
@@ -70,8 +72,25 @@
 
 /*Logo Section*/
 .landingLogo {
+    flex: 1;
+    margin-right: -6.5rem;
+    & .rect {
+        margin-right: -2rem;
+        margin-top: -4rem;
+        border-radius: 3.125rem;
+        width: 35.938rem;
+        height: 28.125rem;
+        -webkit-transform: rotate(-13deg);
+        transform: rotate(-13deg);
+        background-color: $lightGrey;
+    }
 
     & .logo {
-        width: 250px;
+        position: relative;
+        margin-top: 3rem;
+        margin-right: 3rem;
+        float: right;
+        width: 225px;
+        z-index: 1;
     }
 }
