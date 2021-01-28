@@ -7,17 +7,22 @@
         display: inline;
         align-items: center;
         position: relative;
+
+        opacity: 0.4;
+        transition: opacity 2s cubic-bezier(.25, .8, .25, 1);
     }
 
     & .title::before {
         position: absolute;
         border-bottom: 2.083vw solid $lightGold;
         opacity: 0.6;
-        width: 13.5416vw;
         z-index: -1;
         border-radius: 0.326vw;
         top: 3.6458vw;
         content: '';
+
+        width: 0vw;
+        transition: all 0.4s cubic-bezier(.25, .8, .25, 1);
     }
 
     & .title::after {
@@ -26,7 +31,24 @@
         border-bottom: 0.3906vw solid $offWhite;
         border-radius: 0.1302vw;
         content: '';
-        width: 19.531vw;
         top: 3.255vw;
+
+        width: 0vw;
+        transition: all 0.4s cubic-bezier(.25, .8, .25, 1);
+        transition-delay: 0.2s;
+    }
+}
+
+.aboutMe:hover {
+    & .title {
+        opacity: 1;
+    }
+
+    & .title::before {
+        width: 13.5416vw;
+    }
+
+    & .title::after {
+        width: 19.531vw;
     }
 }

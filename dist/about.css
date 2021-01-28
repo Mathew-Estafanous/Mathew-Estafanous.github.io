@@ -5,17 +5,22 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  opacity: 0.4;
+  -webkit-transition: opacity 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: opacity 2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .aboutMe .title::before {
   position: absolute;
   border-bottom: 2.083vw solid #CBB687;
   opacity: 0.6;
-  width: 13.5416vw;
   z-index: -1;
   border-radius: 0.326vw;
   top: 3.6458vw;
   content: '';
+  width: 0vw;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .aboutMe .title::after {
@@ -24,7 +29,23 @@
   border-bottom: 0.3906vw solid #F5F5EF;
   border-radius: 0.1302vw;
   content: '';
-  width: 19.531vw;
   top: 3.255vw;
+  width: 0vw;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.aboutMe:hover .title {
+  opacity: 1;
+}
+
+.aboutMe:hover .title::before {
+  width: 13.5416vw;
+}
+
+.aboutMe:hover .title::after {
+  width: 19.531vw;
 }
 /*# sourceMappingURL=about.css.map */
