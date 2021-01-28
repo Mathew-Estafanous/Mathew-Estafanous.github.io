@@ -173,7 +173,7 @@ body {
 }
 
 .aboutMe .title {
-  font-size: 4rem;
+  font-size: 4.166vw;
   display: inline;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -183,22 +183,22 @@ body {
 
 .aboutMe .title::before {
   position: absolute;
-  border-bottom: 2rem solid #CBB687;
+  border-bottom: 2.083vw solid #CBB687;
   opacity: 0.6;
-  width: 13rem;
+  width: 13.5416vw;
   z-index: -1;
-  border-radius: 0.313rem;
-  top: 3.5rem;
+  border-radius: 0.326vw;
+  top: 3.6458vw;
   content: '';
 }
 
 .aboutMe .title::after {
-  margin-left: 2rem;
+  margin-left: 2.083vw;
   position: absolute;
-  border-bottom: 0.375rem solid #F5F5EF;
-  border-radius: 0.125rem;
+  border-bottom: 0.3906vw solid #F5F5EF;
+  border-radius: 0.1302vw;
   content: '';
-  width: 18.75rem;
-  top: 3.125rem;
+  width: 19.531vw;
+  top: 3.255vw;
 }
 /*# sourceMappingURL=style.css.map */
