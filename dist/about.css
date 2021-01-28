@@ -1,0 +1,30 @@
+.aboutMe .title {
+  font-size: 4rem;
+  display: inline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.aboutMe .title::before {
+  position: absolute;
+  border-bottom: 2rem solid #CBB687;
+  opacity: 0.6;
+  width: 13rem;
+  z-index: -1;
+  border-radius: 0.313rem;
+  top: 3.5rem;
+  content: '';
+}
+
+.aboutMe .title::after {
+  margin-left: 2rem;
+  position: absolute;
+  border-bottom: 0.313rem solid #F5F5EF;
+  border-radius: 0.125rem;
+  content: '';
+  width: 18.75rem;
+  top: 3.125rem;
+}
+/*# sourceMappingURL=about.css.map */

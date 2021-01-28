@@ -1,0 +1,32 @@
+@import "colours";
+
+.aboutMe {
+
+    & .title {
+        font-size: 4rem;
+        display: inline;
+        align-items: center;
+        position: relative;
+    }
+
+    & .title::before {
+        position: absolute;
+        border-bottom: 2rem solid $lightGold;
+        opacity: 0.6;
+        width: 13rem;
+        z-index: -1;
+        border-radius: 0.313rem;
+        top: 3.5rem;
+        content: '';
+    }
+
+    & .title::after {
+        margin-left: 2rem;
+        position: absolute;
+        border-bottom: 0.313rem solid $offWhite;
+        border-radius: 0.125rem;
+        content: '';
+        width: 18.75rem;
+        top: 3.125rem;
+    }
+}
