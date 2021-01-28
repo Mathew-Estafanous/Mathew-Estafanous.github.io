@@ -2,7 +2,7 @@
 
 .landing {
     display: flex;
-    margin-bottom: 22rem;
+    margin-bottom: 22.916vw;
 }
 
 
@@ -41,13 +41,13 @@
 
 /*Welcome Message*/
 .welcomeMsg {
-    margin-top: 15rem;
+    margin-top: 15.625vw;
     flex: 2;
 
     & h1 {
         margin: 0;
 
-        line-height: 4rem;
+        line-height: 4.166vw;
         font-weight: lighter;
         font-size: 3.5vw;
     }
@@ -58,7 +58,7 @@
 
     & span {
         color: #CBB687;
-        margin-left: 1rem;
+        margin-left: 1.0416vw;
         font-size: 4.25vw;
         font-weight: bold;
         text-align: center;
@@ -106,13 +106,13 @@
 /*Logo Section*/
 .landingLogo {
     flex: 1;
-    margin-right: -6.5rem;
+    margin-right: -6.7708vw;
     & .rect {
-        margin-right: -2rem;
-        margin-top: -4rem;
-        border-radius: 3.125rem;
-        width: 35.938rem;
-        height: 28.125rem;
+        margin-right: -2.083vw;
+        margin-top: -2.083vw;
+        border-radius: 3.255vw;
+        width: 37.43vw;
+        height: 29.296vw;
         -webkit-transform: rotate(-13deg);
         transform: rotate(-13deg);
         background-color: $lightGrey;
@@ -120,10 +120,10 @@
 
     & .logo {
         position: relative;
-        margin-top: 3rem;
-        margin-right: 3rem;
+        margin-top: 6.6482vh;
+        margin-right: 3.125vw;
         float: right;
-        width: 225px;
+        width: 14.648vw;
         z-index: 1;
     }
 }
