@@ -1,0 +1,77 @@
+.landing {
+    display: flex;
+}
+
+
+/*Welcome Message*/
+.welcomeMsg {
+    margin-top: 15rem;
+    width: 65%;
+
+    & h1 {
+        margin: 0;
+
+        line-height: 4rem;
+        font-weight: lighter;
+        font-size: 3.75rem;
+    }
+}
+
+.rotatingWord {
+    display: inline;
+
+    & span {
+        color: #CBB687;
+        margin-left: 1rem;
+        font-size: 4.75rem;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        animation: cycleThroughWords 12s ease-in-out infinite 0s;
+    }
+}
+
+/*Cycling Words Animation*/
+
+.rotatingWord span:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.rotatingWord span:nth-child(3) {
+    animation-delay: 8s;
+}
+
+/*Keyframes*/
+@keyframes cycleThroughWords {
+    0% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+        height: 0;
+    }
+    8% {
+        opacity: 1;
+        height: 60px;
+    }
+    19% {
+        opacity: 1;
+        height: 60px;
+    }
+	25% {
+        opacity: 0;
+        height: 30px;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+/*Logo Section*/
+.landingLogo {
+
+    & .logo {
+        width: 250px;
+    }
+}
