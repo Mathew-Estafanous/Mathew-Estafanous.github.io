@@ -43,7 +43,7 @@
   margin: 0;
   line-height: 4rem;
   font-weight: lighter;
-  font-size: 3.75rem;
+  font-size: 3.5vw;
 }
 
 .rotatingWord {
@@ -53,7 +53,7 @@
 .rotatingWord span {
   color: #CBB687;
   margin-left: 1rem;
-  font-size: 4.75rem;
+  font-size: 4.25vw;
   font-weight: bold;
   text-align: center;
   opacity: 0;
