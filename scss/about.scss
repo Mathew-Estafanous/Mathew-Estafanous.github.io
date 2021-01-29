@@ -1,7 +1,6 @@
 @import "colours";
 
 .aboutMe {
-
     & .title {
         font-size: 4.166vw;
         display: inline;
@@ -21,7 +20,7 @@
         top: 3.6458vw;
         content: '';
 
-        width: 0vw;
+        width: 1vw;
         transition: all 0.4s cubic-bezier(.25, .8, .25, 1);
     }
 
@@ -33,7 +32,7 @@
         content: '';
         top: 3.255vw;
 
-        width: 0vw;
+        width: 1vw;
         transition: all 0.4s cubic-bezier(.25, .8, .25, 1);
         transition-delay: 0.2s;
     }
@@ -62,6 +61,39 @@
                 max-width: 36.653vw;
                 border: 0.9765vw solid $lightGrey;
                 border-radius: 1.6276vw;
+            }
+
+            & .otherSources {
+                margin-top: 1vw;
+                text-align: center;
+                position: relative;
+
+                & a {
+                    font-size: 1.6276vw;
+                    text-decoration: none;
+                    color: $offWhite;
+                }
+
+                & a::before {
+                    position: absolute;
+                    border-bottom: 1.2vw solid $lightGold;
+                    opacity: 0.6;
+                    z-index: -1;
+                    border-radius: 0.226vw;
+                    top: 1.25vw;
+                    content: '';
+
+                    width: .2vw;
+                    transition: all 0.4s cubic-bezier(.25, .8, .25, 1);
+                }
+
+                & a:hover::before {
+                    width: 4vw;
+                }
+
+                & :not(:first-child){
+                    margin-left: 2vw;
+                }
             }
         }
     }

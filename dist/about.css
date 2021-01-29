@@ -18,7 +18,7 @@
   border-radius: 0.326vw;
   top: 3.6458vw;
   content: '';
-  width: 0vw;
+  width: 1vw;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -30,7 +30,7 @@
   border-radius: 0.1302vw;
   content: '';
   top: 3.255vw;
-  width: 0vw;
+  width: 1vw;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   -webkit-transition-delay: 0.2s;
@@ -69,6 +69,39 @@
   max-width: 36.653vw;
   border: 0.9765vw solid #2B2B2B;
   border-radius: 1.6276vw;
+}
+
+.aboutMe .content .imageContent .otherSources {
+  margin-top: 1vw;
+  text-align: center;
+  position: relative;
+}
+
+.aboutMe .content .imageContent .otherSources a {
+  font-size: 1.6276vw;
+  text-decoration: none;
+  color: #F5F5EF;
+}
+
+.aboutMe .content .imageContent .otherSources a::before {
+  position: absolute;
+  border-bottom: 1.2vw solid #CBB687;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 0.226vw;
+  top: 1.25vw;
+  content: '';
+  width: .2vw;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.aboutMe .content .imageContent .otherSources a:hover::before {
+  width: 4vw;
+}
+
+.aboutMe .content .imageContent .otherSources :not(:first-child) {
+  margin-left: 2vw;
 }
 
 .aboutMe:hover .title {
