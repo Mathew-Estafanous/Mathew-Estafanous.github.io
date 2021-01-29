@@ -1,0 +1,23 @@
+.projects {
+  opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.projects .cell {
+  min-height: 5.338vw;
+  width: 69.8568vw;
+  margin: 1.6276vw auto;
+  border: 0.195vw solid #F5F5EF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.651vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.active > .projects {
+  opacity: 1;
+}
+/*# sourceMappingURL=projects.css.map */
