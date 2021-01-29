@@ -37,6 +37,31 @@
         transition: all 0.4s cubic-bezier(.25, .8, .25, 1);
         transition-delay: 0.2s;
     }
+
+    & .content {
+        display: flex;
+
+        & .bio {
+            font-size:  1.43229vw;
+            font-weight: lighter;
+            flex: 1;
+
+            & .highlight {
+                color: $lightGold;
+                font-weight: bold;
+            }
+        }
+
+        & .imageContent {
+            flex: 1;
+            display: block;
+
+            & img {
+                max-width: 36.653vw;
+                max-height: 22.7213vw;
+            }
+        }
+    }
 }
 
 .aboutMe:hover {

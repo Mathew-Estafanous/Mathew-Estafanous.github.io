@@ -37,6 +37,37 @@
           transition-delay: 0.2s;
 }
 
+.aboutMe .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutMe .content .bio {
+  font-size: 1.43229vw;
+  font-weight: lighter;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aboutMe .content .bio .highlight {
+  color: #CBB687;
+  font-weight: bold;
+}
+
+.aboutMe .content .imageContent {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
+.aboutMe .content .imageContent img {
+  max-width: 36.653vw;
+  max-height: 22.7213vw;
+}
+
 .aboutMe:hover .title {
   opacity: 1;
 }
