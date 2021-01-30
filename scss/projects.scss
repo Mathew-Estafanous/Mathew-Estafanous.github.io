@@ -42,8 +42,8 @@
 
             & a {
                 color: $offWhite;
-                font-size: 1.6276vw;
-                margin-right: 2vw;
+                font-size: 1.3vw;
+                margin-right: 1vw;
             }
 
             & .dropdownArrow {
@@ -72,6 +72,7 @@
                 & li {
                     display: inline;
                     background-color: $lightGold;
+                    color: $darkBlack;
                     border-radius: 0.1953vw;
                     padding: 0.2vw 0.6vw;
                     margin-left: 0.5vw;

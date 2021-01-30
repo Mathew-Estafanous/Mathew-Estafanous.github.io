@@ -136,18 +136,92 @@
                     </div>
                     <div class="moreInfo">
                         <p>
-                            This is simple space simulation that generates an entire universe through the use of one universe seed.
+                            A space simulation that generates an entire universe through the use of one universe seed.
                             Generated planets have their own number of moons, colour, size, etc. which can all be simulated. Orbiting
                             moons and a simulation of the planet's land can be shown and will always remain consistent if the user would
                             like to revisit the planet. This project was started after I had an interested in object procedural generation.
-                            After researching about all kinds of terrain and object generation I decided to create this project to apply my
-                            new knowledge in a basic form that would help me understand the different concepts of procedural generation.
+                            To ensure minimal memory usage, only visible objects are generated and when they are out of view they are all
+                            destroyed. Data persistence is as simple as storing a space region and it's seed ID. whenever the space region
+                            becomes visible, it looks up the ID in a HashTable and generate the region using the seed ID!
+                        </p>
+                        <ul>
+                            <li>Java</li>
+                            <li>Perlin Noise</li>
+                            <li>HashTable</li>
+                            <li>Binary Search</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordian">
+                    <div class="quickInfo">
+                        <h2 class="name">Desktop Poro</h2>
+                        <span class="dash"></span>
+                        <h3 class="shortDesc">A cute poro that walks around and keeps you company as you work!</h3>
+                        <span class="spacer"></span>
+                        <a href="https://devpost.com/software/desktop-poro" target=”_blank”>Devpost</a>
+                        <a href="https://github.com/Mathew-Estafanous/Desktop-Poro" target=”_blank”>Github</a>
+                        <img class="dropdownArrow" src="./static/resources/Dropdown-arrow.png" alt="Dropdown-arrow">
+                    </div>
+                    <div class="moreInfo">
+                        <p>
+                            Desktop poro is a cute interactable pet that walks around ontop of your desktop while you are working.
+                            Watch poro as he sends you motivational messages or even play with him by tossing him around your
+                            screen and see him bounce. This project was done in about 30hrs for HackTheNorth 2020++, which is
+                            a major hackathon run by the Waterloo Engineering departement. Some key aspects of the project involve
+                            state management, physics handling and the graphics of the pet.
                         </p>
                         <ul>
                             <li>Java</li>
                             <li>Maven</li>
-                            <li>Perlin Noise</li>
-                            <li>Binary Search</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordian">
+                    <div class="quickInfo">
+                        <h2 class="name">Portfolio Website</h2>
+                        <span class="dash"></span>
+                        <h3 class="shortDesc">The website you are currently viewing right now!</h3>
+                        <span class="spacer"></span>
+                        <a href="" target=”_blank”>Site</a>
+                        <a href="https://github.com/Mathew-Estafanous/Mathew-Estafanous.github.io" target=”_blank”>Github</a>
+                        <img class="dropdownArrow" src="./static/resources/Dropdown-arrow.png" alt="Dropdown-arrow">
+                    </div>
+                    <div class="moreInfo">
+                        <p>
+                            You are currently viewing my portfoliow where you can get to access all the needed information you could
+                            ever want! JQuery plays a role in interactions such as this drop down and triggering animations when needed.
+                            I chose to use SCSS since it is much more veristle and flexible in how styling can be formatted.
+                        </p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordian">
+                    <div class="quickInfo">
+                        <h2 class="name">A* Pathfinding Visualizer</h2>
+                        <span class="dash"></span>
+                        <h3 class="shortDesc">Watch the A* pathfinding in action as it looks for the shortest path.</h3>
+                        <span class="spacer"></span>
+                        <a href="https://github.com/Mathew-Estafanous/A-PathFinding" target=”_blank”>Github</a>
+                        <img class="dropdownArrow" src="./static/resources/Dropdown-arrow.png" alt="Dropdown-arrow">
+                    </div>
+                    <div class="moreInfo">
+                        <p>
+                            This A* Pathfinding visualizer allows users to place a start and endpoint and walls between
+                            those two points. When ready, the visualizer will show it's process of calculating all the
+                            solutions and will find the shortest possible path between both given points. A min binary
+                            heap data structure is used to ensure the maximum efficency as the algorithm searches for
+                            the solution.
+                        </p>
+                        <ul>
+                            <li>Java</li>
+                            <li>A* Algorithm</li>
+                            <li>Min Binary Heap</li>
+                            <li>Maven</li>
                         </ul>
                     </div>
                 </div>

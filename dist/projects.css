@@ -49,8 +49,8 @@
 
 .projects .accordian .quickInfo a {
   color: #F5F5EF;
-  font-size: 1.6276vw;
-  margin-right: 2vw;
+  font-size: 1.3vw;
+  margin-right: 1vw;
 }
 
 .projects .accordian .quickInfo .dropdownArrow {
@@ -83,6 +83,7 @@
 .projects .accordian .moreInfo ul li {
   display: inline;
   background-color: #CBB687;
+  color: #121212;
   border-radius: 0.1953vw;
   padding: 0.2vw 0.6vw;
   margin-left: 0.5vw;
