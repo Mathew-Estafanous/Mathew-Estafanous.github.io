@@ -36,7 +36,7 @@ $cubicTransition: cubic-bezier(.25, .8, .25, 1);
     }
 }
 
-.active > .title {
+.inView > .title {
     opacity: 1;
 
     &::before {

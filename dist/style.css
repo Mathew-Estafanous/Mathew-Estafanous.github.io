@@ -211,15 +211,15 @@ body {
           transition-delay: 0.2s;
 }
 
-.active > .title {
+.inView > .title {
   opacity: 1;
 }
 
-.active > .title::before {
+.inView > .title::before {
   width: 85%;
 }
 
-.active > .title::after {
+.inView > .title::after {
   width: 19.531vw;
 }
 
