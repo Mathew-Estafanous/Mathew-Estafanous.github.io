@@ -307,6 +307,7 @@ body {
   opacity: 0;
   -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 12vw;
 }
 
 .projects .accordian {
@@ -360,10 +361,10 @@ body {
 .projects .accordian .quickInfo .dropdownArrow {
   margin-right: 2vw;
   width: 2.6041vw;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 .projects .accordian .moreInfo {
@@ -381,6 +382,7 @@ body {
 .projects .accordian .moreInfo ul {
   list-style-type: none;
   padding: 0;
+  font-size: 1.1718vw;
 }
 
 .projects .accordian .moreInfo ul li {
