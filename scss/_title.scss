@@ -47,3 +47,15 @@ $cubicTransition: cubic-bezier(.25, .8, .25, 1);
         width: 19.531vw;
     }
 }
+
+.inView.title {
+    opacity: 1;
+
+    &::before {
+        width: 85%;
+    }
+
+    &::after {
+        width: 19.531vw;
+    }
+}
