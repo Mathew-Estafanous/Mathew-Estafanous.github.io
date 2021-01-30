@@ -11,6 +11,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0.651vw;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .projects .accordian .quickInfo {
@@ -86,6 +88,10 @@
 
 .inView > .projects {
   opacity: 1;
+}
+
+.accordian.isActive {
+  background-color: #2B2B2B;
 }
 
 .accordian.isActive .dropdownArrow {
