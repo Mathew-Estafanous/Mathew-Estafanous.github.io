@@ -4,7 +4,7 @@
     opacity: 0;
     transition: all 1s cubic-bezier(.25, .8, .25, 1);
 
-    & .cell {
+    & .accordian {
         width: 69.8568vw;
         margin: 1.6276vw auto;
         border: 0.195vw solid $offWhite;
@@ -43,14 +43,19 @@
                 margin-right: 2vw;
             }
 
-            & img {
+            & .dropdownArrow {
                 margin-right: 2vw;
                 width: 2.6041vw;
+                transition: transform .2s ease-in-out;
             }
         }
 
         & .moreInfo {
             margin: auto .75vw;
+            max-height: 0;
+            overflow-y: hidden;
+
+            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 
             & p {
                 font-size: 1.0416vw;
@@ -74,4 +79,15 @@
 
 .inView > .projects {
     opacity: 1;
+}
+
+.accordian.isActive {
+    & .dropdownArrow {
+        transform: rotateX(180deg);
+    }
+
+    & .moreInfo {
+        max-height: 800px;
+        transition: max-height 1s ease-in-out;
+    }
 }

@@ -4,7 +4,7 @@
   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.projects .cell {
+.projects .accordian {
   width: 69.8568vw;
   margin: 1.6276vw auto;
   border: 0.195vw solid #F5F5EF;
@@ -13,7 +13,7 @@
   border-radius: 0.651vw;
 }
 
-.projects .cell .quickInfo {
+.projects .accordian .quickInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,12 +22,12 @@
           align-items: center;
 }
 
-.projects .cell .quickInfo .name {
+.projects .accordian .quickInfo .name {
   font-size: 1.4vw;
   margin-left: 0.5vw;
 }
 
-.projects .cell .quickInfo .dash {
+.projects .accordian .quickInfo .dash {
   width: 2vw;
   height: 0.2604vw;
   border-radius: 0.13021vw;
@@ -35,40 +35,48 @@
   margin: auto 0.5vw;
 }
 
-.projects .cell .quickInfo .shortDesc {
+.projects .accordian .quickInfo .shortDesc {
   font-size: 1.1718vw;
   font-weight: lighter;
 }
 
-.projects .cell .quickInfo .spacer {
+.projects .accordian .quickInfo .spacer {
   margin-left: auto;
 }
 
-.projects .cell .quickInfo a {
+.projects .accordian .quickInfo a {
   color: #F5F5EF;
   font-size: 1.6276vw;
   margin-right: 2vw;
 }
 
-.projects .cell .quickInfo img {
+.projects .accordian .quickInfo .dropdownArrow {
   margin-right: 2vw;
   width: 2.6041vw;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
-.projects .cell .moreInfo {
+.projects .accordian .moreInfo {
   margin: auto .75vw;
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
-.projects .cell .moreInfo p {
+.projects .accordian .moreInfo p {
   font-size: 1.0416vw;
 }
 
-.projects .cell .moreInfo ul {
+.projects .accordian .moreInfo ul {
   list-style-type: none;
   padding: 0;
 }
 
-.projects .cell .moreInfo ul li {
+.projects .accordian .moreInfo ul li {
   display: inline;
   background-color: #CBB687;
   border-radius: 0.1953vw;
@@ -78,5 +86,16 @@
 
 .inView > .projects {
   opacity: 1;
+}
+
+.accordian.isActive .dropdownArrow {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.accordian.isActive .moreInfo {
+  max-height: 800px;
+  -webkit-transition: max-height 1s ease-in-out;
+  transition: max-height 1s ease-in-out;
 }
 /*# sourceMappingURL=projects.css.map */
