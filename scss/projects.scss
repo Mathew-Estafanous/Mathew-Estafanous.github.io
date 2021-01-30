@@ -5,13 +5,69 @@
     transition: all 1s cubic-bezier(.25, .8, .25, 1);
 
     & .cell {
-        min-height: 5.338vw;
         width: 69.8568vw;
         margin: 1.6276vw auto;
-        border: 0.195vw solid #F5F5EF;
+        border: 0.195vw solid $offWhite;
         box-sizing: border-box;
         border-radius: 0.651vw;
-        display: inline-flex;
+
+        & .quickInfo {
+            display: flex;
+            align-items: center;
+
+            & .name {
+                font-size: 1.4vw;
+                margin-left: 0.5vw;
+            }
+    
+            & .dash {
+                width: 2vw;
+                height: 0.2604vw;
+                border-radius: 0.13021vw;
+                background: $offWhite;
+                margin: auto 0.5vw;
+            }
+    
+            & .shortDesc {
+                font-size: 1.1718vw;
+                font-weight: lighter;
+            }
+
+            & .spacer {
+                margin-left: auto;
+            }
+
+            & a {
+                color: $offWhite;
+                font-size: 1.6276vw;
+                margin-right: 2vw;
+            }
+
+            & img {
+                margin-right: 2vw;
+                width: 2.6041vw;
+            }
+        }
+
+        & .moreInfo {
+            margin: auto .75vw;
+
+            & p {
+                font-size: 1.0416vw;
+            }
+
+            & ul {
+                list-style-type: none;
+
+                & li {
+                    display: block;
+                }
+
+                &:not(:first-child) {
+                    margin-left: 2vw;
+                }
+            }
+        }
     }
 }
 

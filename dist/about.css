@@ -6,8 +6,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: opacity 3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: opacity 3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transition: opacity 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: opacity 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
   opacity: 0;
 }
 

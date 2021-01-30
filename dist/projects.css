@@ -5,16 +5,74 @@
 }
 
 .projects .cell {
-  min-height: 5.338vw;
   width: 69.8568vw;
   margin: 1.6276vw auto;
   border: 0.195vw solid #F5F5EF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0.651vw;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+}
+
+.projects .cell .quickInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .cell .quickInfo .name {
+  font-size: 1.4vw;
+  margin-left: 0.5vw;
+}
+
+.projects .cell .quickInfo .dash {
+  width: 2vw;
+  height: 0.2604vw;
+  border-radius: 0.13021vw;
+  background: #F5F5EF;
+  margin: auto 0.5vw;
+}
+
+.projects .cell .quickInfo .shortDesc {
+  font-size: 1.1718vw;
+  font-weight: lighter;
+}
+
+.projects .cell .quickInfo .spacer {
+  margin-left: auto;
+}
+
+.projects .cell .quickInfo a {
+  color: #F5F5EF;
+  font-size: 1.6276vw;
+  margin-right: 2vw;
+}
+
+.projects .cell .quickInfo img {
+  margin-right: 2vw;
+  width: 2.6041vw;
+}
+
+.projects .cell .moreInfo {
+  margin: auto .75vw;
+}
+
+.projects .cell .moreInfo p {
+  font-size: 1.0416vw;
+}
+
+.projects .cell .moreInfo ul {
+  list-style-type: none;
+}
+
+.projects .cell .moreInfo ul li {
+  display: block;
+}
+
+.projects .cell .moreInfo ul:not(:first-child) {
+  margin-left: 2vw;
 }
 
 .active > .projects {
