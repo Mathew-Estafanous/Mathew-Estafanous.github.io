@@ -299,7 +299,7 @@ body {
   margin-left: 2vw;
 }
 
-.aboutMe.active .content {
+.aboutMe.inView .content {
   opacity: 1;
 }
 
@@ -381,7 +381,7 @@ body {
   margin-left: 0.5vw;
 }
 
-.active > .projects {
+.inView > .projects {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

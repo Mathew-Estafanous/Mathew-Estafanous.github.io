@@ -8,12 +8,12 @@ $(window).on("load",function() {
 
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-          if (!$(this).hasClass("active")) {
-            $(this).addClass("active");
+          if (!$(this).hasClass("inView")) {
+            $(this).addClass("inView");
           }
         } else { //object goes out of view (scrolling up)
-          if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
+          if ($(this).hasClass("inView")) {
+            $(this).removeClass("inView");
           }
         }
       });
