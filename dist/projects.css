@@ -65,14 +65,15 @@
 
 .projects .cell .moreInfo ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .projects .cell .moreInfo ul li {
-  display: block;
-}
-
-.projects .cell .moreInfo ul:not(:first-child) {
-  margin-left: 2vw;
+  display: inline;
+  background-color: #CBB687;
+  border-radius: 0.1953vw;
+  padding: 0.2vw 0.6vw;
+  margin-left: 0.5vw;
 }
 
 .active > .projects {

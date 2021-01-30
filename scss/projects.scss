@@ -58,13 +58,14 @@
 
             & ul {
                 list-style-type: none;
+                padding: 0;
 
                 & li {
-                    display: block;
-                }
-
-                &:not(:first-child) {
-                    margin-left: 2vw;
+                    display: inline;
+                    background-color: $lightGold;
+                    border-radius: 0.1953vw;
+                    padding: 0.2vw 0.6vw;
+                    margin-left: 0.5vw;
                 }
             }
         }
