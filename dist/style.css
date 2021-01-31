@@ -285,26 +285,26 @@ body {
 }
 
 .aboutMe .content .imageContent .otherSources a {
-  font-size: 1.6276vw;
+  font-size: 1.8vw;
   text-decoration: none;
   color: #F5F5EF;
 }
 
 .aboutMe .content .imageContent .otherSources a::before {
   position: absolute;
-  border-bottom: 1.2vw solid #CBB687;
+  border-bottom: 1vw solid #CBB687;
   opacity: 0.6;
   z-index: -1;
   border-radius: 0.226vw;
-  top: 1.25vw;
+  top: 1.50vw;
   content: '';
-  width: .2vw;
+  width: .4vw;
   -webkit-transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .aboutMe .content .imageContent .otherSources a:hover::before {
-  width: 4vw;
+  width: 4.5vw;
 }
 
 .aboutMe .content .imageContent .otherSources :not(:first-child) {
@@ -429,32 +429,46 @@ body {
   transition: max-height 1s ease-in-out;
 }
 
-.learn {
-  text-align: center;
-  margin-bottom: 5vw;
+.connect {
+  margin-bottom: 12vw;
 }
 
-.learn p {
+.connect .learn {
+  text-align: center;
+  margin-bottom: 5vw;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+}
+
+.connect .learn p {
   font-size: 2.2786vw;
   line-height: 1.30208vw;
 }
 
-.learn p.you {
+.connect .learn p.you {
   font-size: 2.9296vw;
   font-weight: bold;
   color: #CBB687;
 }
 
-.contact {
+.connect .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 
-.contact div {
+.connect .contact div {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   width: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,35 +477,49 @@ body {
   border-radius: 0.65189vw;
 }
 
-.contact div:first-child {
+.connect .contact div:first-child {
   margin-right: 5vw;
 }
 
-.contact div h2 {
+.connect .contact div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.connect .contact div:hover a img {
+  -webkit-transform: rotate(-90deg) scale(1.15);
+          transform: rotate(-90deg) scale(1.15);
+}
+
+.connect .contact div:hover a img:hover {
+  cursor: pointer;
+}
+
+.connect .contact div h2 {
   margin: 0.5vw auto 0.5vw 2vw;
   font-size: 1.8vw;
 }
 
-.contact div a {
+.connect .contact div a {
   margin: auto 1vw;
 }
 
-.contact div a:hover img {
-  -webkit-transform: rotate(-90deg) scale(1.2);
-          transform: rotate(-90deg) scale(1.2);
-}
-
-.contact div a img {
-  margin: auto;
-  width: 2.2786vw;
+.connect .contact div a img {
+  width: 2.3vw;
   height: 3.125vw;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.connect.inView .learn {
+  opacity: 1;
+}
+
+.contact.inView {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

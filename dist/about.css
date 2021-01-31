@@ -48,26 +48,26 @@
 }
 
 .aboutMe .content .imageContent .otherSources a {
-  font-size: 1.6276vw;
+  font-size: 1.8vw;
   text-decoration: none;
   color: #F5F5EF;
 }
 
 .aboutMe .content .imageContent .otherSources a::before {
   position: absolute;
-  border-bottom: 1.2vw solid #CBB687;
+  border-bottom: 1vw solid #CBB687;
   opacity: 0.6;
   z-index: -1;
   border-radius: 0.226vw;
-  top: 1.25vw;
+  top: 1.50vw;
   content: '';
-  width: .2vw;
+  width: .4vw;
   -webkit-transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .aboutMe .content .imageContent .otherSources a:hover::before {
-  width: 4vw;
+  width: 4.5vw;
 }
 
 .aboutMe .content .imageContent .otherSources :not(:first-child) {
