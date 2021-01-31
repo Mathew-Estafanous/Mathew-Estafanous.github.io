@@ -251,13 +251,11 @@ body {
 }
 
 .aboutMe .content .bio {
-  display: relative;
   font-size: 1.43229vw;
   font-weight: lighter;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  top: 4vw;
 }
 
 .aboutMe .content .bio .highlight {
@@ -281,7 +279,7 @@ body {
 }
 
 .aboutMe .content .imageContent .otherSources {
-  margin-top: 1vw;
+  margin-top: 2vw;
   text-align: center;
   position: relative;
 }
@@ -315,10 +313,6 @@ body {
 
 .aboutMe.inView .content {
   opacity: 1;
-}
-
-.aboutMe.inView .bio {
-  top: 0;
 }
 
 .projects {
@@ -433,5 +427,71 @@ body {
   max-height: 800px;
   -webkit-transition: max-height 1s ease-in-out;
   transition: max-height 1s ease-in-out;
+}
+
+.learn {
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.learn p {
+  font-size: 2.2786vw;
+  line-height: 1.30208vw;
+}
+
+.learn p.you {
+  font-size: 2.9296vw;
+  font-weight: bold;
+  color: #CBB687;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact div {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.3011vw solid #F5F5EF;
+  border-radius: 0.65189vw;
+}
+
+.contact div:first-child {
+  margin-right: 5vw;
+}
+
+.contact div h2 {
+  margin: 0.5vw auto 0.5vw 2vw;
+  font-size: 1.8vw;
+}
+
+.contact div a {
+  margin: auto 1vw;
+}
+
+.contact div a:hover img {
+  -webkit-transform: rotate(-90deg) scale(1.2);
+          transform: rotate(-90deg) scale(1.2);
+}
+
+.contact div a img {
+  margin: auto;
+  width: 2.2786vw;
+  height: 3.125vw;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
