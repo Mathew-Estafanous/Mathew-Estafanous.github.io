@@ -505,6 +505,7 @@ body {
 }
 
 .connect .contact div a img {
+  vertical-align: middle;
   width: 2.3vw;
   height: 3.125vw;
   -webkit-transform-origin: center;
