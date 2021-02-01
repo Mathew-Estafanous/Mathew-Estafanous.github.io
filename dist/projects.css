@@ -65,6 +65,10 @@
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
+.projects .accordian .quickInfo .dropdownArrow:hover {
+  cursor: pointer;
+}
+
 .projects .accordian .moreInfo {
   margin: auto .75vw;
   max-height: 0;
