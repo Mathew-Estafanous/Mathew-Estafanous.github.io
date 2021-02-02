@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./static/resources/Logo.png" width="115px">
+    <img src="./static/resources/Logo.png" width="130px">
     <h1 align="center">My Portfolio Website (V1)</h1>
 </p>
 
