@@ -15,8 +15,8 @@
           box-sizing: border-box;
   border-radius: 0.651vw;
   top: 4.5vw;
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects .accordian .quickInfo {

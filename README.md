@@ -13,7 +13,7 @@ The website is hosted using [Github Pages](https://pages.github.com/) to allow f
 
 ## What was the design approach?
 
-I'm far a good designer so my priority when thinking of the design of the website was for something simple and easy to follow. With that in mind, I chose a one page layout with all the information being ordered in sub headings as you scroll down.
+I'm far from the best designer so my priority when thinking of the design of the website was something simple and easy to follow. With that in mind, I chose a one page layout with all the information being ordered in sub headings as you scroll down.
 
 To plan out the design, I got the chance to learn and use [Figma](https://www.figma.com/) as I planned out the layouts and possible animations for the portfolio website.
 

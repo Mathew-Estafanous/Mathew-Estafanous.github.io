@@ -39,7 +39,7 @@
                 transform: scale(1.1);
 
                 & a img {
-                    transform: rotate(-90deg) scale(1.15);
+                    transform: rotate(-90deg);
 
                     &:hover {
                         cursor: pointer;
@@ -54,7 +54,7 @@
     
             h2 {
                 margin: 0.5vw auto 0.5vw 2vw;
-                font-size: 1.8vw;
+                font-size: 1.5vw;
             }
 
             a {
