@@ -65,7 +65,7 @@
         opacity: 0;
         overflow: hidden;
         position: absolute;
-        animation: cycleThroughWords 12s ease-in-out infinite 0s;
+        animation: cycleThroughWords 8s ease-in-out infinite 0s;
     }
 }
 
@@ -74,32 +74,23 @@
     animation-delay: 4s;
 }
 
-.rotatingWord span:nth-child(3) {
-    animation-delay: 8s;
-}
-
 /*Keyframes*/
 @keyframes cycleThroughWords {
-    0% {
-        opacity: 1;
-        animation-timing-function: ease-in;
-        height: 0;
-    }
-    8% {
+    5% {
         opacity: 1;
         height: 60px;
     }
     19% {
         opacity: 1;
-        height: 60px;
     }
-	25% {
+    45% {
+        opacity: 1;
+    }
+    50% {
         opacity: 0;
-        height: 30px;
     }
     100% {
         opacity: 0;
-        height: 0;
     }
 }
 

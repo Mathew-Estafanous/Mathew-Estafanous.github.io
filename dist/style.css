@@ -79,8 +79,8 @@ body {
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  -webkit-animation: cycleThroughWords 12s ease-in-out infinite 0s;
-          animation: cycleThroughWords 12s ease-in-out infinite 0s;
+  -webkit-animation: cycleThroughWords 8s ease-in-out infinite 0s;
+          animation: cycleThroughWords 8s ease-in-out infinite 0s;
 }
 
 /*Cycling Words Animation*/
@@ -89,58 +89,41 @@ body {
           animation-delay: 4s;
 }
 
-.rotatingWord span:nth-child(3) {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
 /*Keyframes*/
 @-webkit-keyframes cycleThroughWords {
-  0% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    height: 0;
-  }
-  8% {
+  5% {
     opacity: 1;
     height: 60px;
   }
   19% {
     opacity: 1;
-    height: 60px;
   }
-  25% {
+  45% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
-    height: 30px;
   }
   100% {
     opacity: 0;
-    height: 0;
   }
 }
 @keyframes cycleThroughWords {
-  0% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    height: 0;
-  }
-  8% {
+  5% {
     opacity: 1;
     height: 60px;
   }
   19% {
     opacity: 1;
-    height: 60px;
   }
-  25% {
+  45% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
-    height: 30px;
   }
   100% {
     opacity: 0;
-    height: 0;
   }
 }
 
