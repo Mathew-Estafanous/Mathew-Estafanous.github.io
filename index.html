@@ -137,9 +137,9 @@
                     <div class="moreInfo">
                         <p>
                             I built and tested my own implementation of the raft consensus algorithm, which is a distributed systems
-                            algorithm. Allowing for a cluster of finite state machines that contain the same committed data while also
-                            remaining fault tolerant in the case that a server shuts down. All the nodes communicate over gRPC and rely
-                            on an elected leader for consensus of new data. 
+                            algorithm. It allows for a cluster of finite state machines to contain the same committed data while also
+                            remaining fault tolerant in the case of an unexpected server crash. Programmed the raft nodes to communicate using
+                            gRPC as the standard for communication.
                         </p>
                         <ul>
                             <li>Golang</li>
