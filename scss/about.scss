@@ -32,6 +32,8 @@ $cubicTransition: cubic-bezier(.25, .8, .25, 1);
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 36.653vw;
+                max-height: 32vw;
+                overflow: hidden;
                 border: 0.9765vw solid $lightGrey;
                 border-radius: 1.6276vw;
             }
